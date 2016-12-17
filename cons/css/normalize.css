@@ -1,0 +1,1348 @@
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-size: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a,a:visited{ color:white; text-decoration:none; }
+
+a:focus {
+    outline: none;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+<body class="front no-sidebars page-node page-node- page-node-270 node-type-blank clear-background club i18n-pl admin-menu"><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="padding-bottom: 25px; padding-right: 30px; display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div>
+<a href="#main-content" class="element-invisible element-focusable">Przejdź do treści</a>
+
+<div class="langsBar"></div>
+<div class="mainBg"><div>
+
+
+<div id="block-views-slider-machine-block" class="contextual-links-region  clearfix">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="views-ui-edit first"><a href="/pl/admin/structure/views/view/slider_machine/edit/block?destination=node/270">Edytuj widok</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/views/slider_machine-block/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <div class="view-slider-machine view-id-slider_machine view-display-id-block view-dom-id-daa96deffdb6b173ee709c484494bb26">
+
+
+
+<div class="view-content">
+<div id="flexslider-1" class="flexslider flexslider-processed">
+<ul class="slides"><li style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;" class="flex-active-slide">
+<img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/dsc_0219.jpg" alt="">
+<a href="/pl/node/268/edit?destination=node/270">edytuj</a>
+            </li>
+<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
+<img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/10.jpg" alt="">
+<a href="/pl/node/150/edit?destination=node/270">edytuj</a>
+            </li>
+<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
+<img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/10_1_0.jpg" alt="">
+<a href="/pl/node/149/edit?destination=node/270">edytuj</a>
+            </li>
+</ul><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul></div>
+    </div>
+
+
+
+
+
+
+</div>
+  </div>
+
+    <!--<img src="http://imperium.gitsystem.it/sites/all/themes/imperiumship/img/bgSample.jpg" alt="">-->
+</div></div>
+<div class="shortener" style="-webkit-transform: translate(0%, 0%) scale(1, 1);">
+<div class="langs"><div class="insider">
+
+
+<div id="block-locale-language" class="contextual-links-region  clearfix">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="block-configure first last"><a href="/pl/admin/structure/block/manage/locale/language/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <ul class="language-switcher-locale-url"><li class="pl first active"><a href="/pl" class="language-link active" lang="pl">Polski</a></li>
+<li class="en last"><a href="/en" class="language-link" lang="en">English</a></li>
+</ul>
+  </div>
+
+    </div></div>
+  <div class="shadowBg"><div></div></div>
+  <header role="banner">
+<div class="langMenu"><a href="#"></a></div>
+    <div class="siteinfo">
+<figure>
+        <a href="/pl" title="Strona główna" rel="home">
+<img src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/logo_0_0.png" alt="Strona główna">
+</a>
+        </figure>
+
+          </div>
+
+          <div class="header-region">
+
+
+<div id="block-superfish-2" class="contextual-links-region  clearfix">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="superfish-list first"><a href="/pl/admin/structure/menu/manage/main-menu/list?destination=node/270">Lista odnośników</a></li>
+<li class="superfish-edit"><a href="/pl/admin/structure/menu/manage/main-menu/edit?destination=node/270">Edycja menu</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/superfish/2/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <ul id="superfish-2" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-3 sf-parent-items-3 sf-single-items-0 superfish-processed sf-js-enabled"><li id="menu-2218-2" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/pl/node/270" title="" class="sf-depth-1 menuparent active">Klub<span class="bg"></span><span class="info"></span></a><ul style="float: none; width: 12em;" class="sf-hidden"><li id="menu-2223-2" class="active-trail first odd sf-item-1 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/node/270" title="W klubie" class="sf-depth-2 active" style="float: none; width: auto;">Home<span class="bg"></span><span class="info">W klubie</span></a></li><li id="menu-1687-2" class="middle even sf-item-2 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/calendar" title="Twój czas na imprezę" class="sf-depth-2" style="float: none; width: auto;">Kalendarz<span class="bg"></span><span class="info">Twój czas na imprezę</span></a></li><li id="menu-1094-2" class="last odd sf-item-3 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/node/153" title="Napisz do nas" class="sf-depth-2" style="float: none; width: auto;">Kontakt<span class="bg"></span><span class="info">Napisz do nas</span></a></li></ul></li><li id="menu-1090-2" class="middle even sf-item-2 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/pl/node/158" title="" class="sf-depth-1 menuparent">Sala koncertowa<span class="bg"></span><span class="info"></span></a><ul style="float: none; width: 12em;" class="sf-hidden"><li id="menu-1640-2" class="first odd sf-item-1 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/node/158" title="Na scenie" class="sf-depth-2" style="float: none; width: auto;">Home<span class="bg"></span><span class="info">Na scenie</span></a></li><li id="menu-1691-2" class="middle even sf-item-2 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/node/263" title="Organizacja eventów" class="sf-depth-2" style="float: none; width: auto;">Oferta<span class="bg"></span><span class="info">Organizacja eventów</span></a></li><li id="menu-1420-2" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/parties-gallery" title="zdjęcia z imprez" class="sf-depth-2" style="float: none; width: auto;">Galeria<span class="bg"></span><span class="info">zdjęcia z imprez</span></a></li><li id="menu-967-2" class="middle even sf-item-4 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/dj" title="sprawdź kto gra" class="sf-depth-2" style="float: none; width: auto;">DJe<span class="bg"></span><span class="info">sprawdź kto gra</span></a></li><li id="menu-2222-2" class="last odd sf-item-5 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/event" title="W kalendarzu" class="sf-depth-2" style="float: none; width: auto;">Wydarzenia<span class="bg"></span><span class="info">W kalendarzu</span></a></li></ul></li><li id="menu-1685-2" class="last odd sf-item-3 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/pl/node/262" title="" class="sf-depth-1 menuparent">Restauracja<span class="bg"></span><span class="info"></span></a><ul style="float: none; width: 12em;" class="sf-hidden"><li id="menu-1682-2" class="first odd sf-item-1 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/node/262" title="Kuchnia polska" class="sf-depth-2" style="float: none; width: auto;">Restauracja<span class="bg"></span><span class="info">Kuchnia polska</span></a></li><li id="menu-1681-2" class="middle even sf-item-2 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/menu" title="Do syta!" class="sf-depth-2" style="float: none; width: auto;">Menu<span class="bg"></span><span class="info">Do syta!</span></a></li><li id="menu-2258-2" class="last odd sf-item-3 sf-depth-2 sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="/pl/oferta-specjalna" title="specjalna" class="sf-depth-2" style="float: none; width: auto;">Oferta<span class="bg"></span><span class="info">specjalna</span></a></li></ul></li></ul>
+  </div>
+
+<div id="block-superfish-6" class="contextual-links-region  clearfix">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="superfish-list first"><a href="/pl/admin/structure/menu/manage/main-menu/list?destination=node/270">Lista odnośników</a></li>
+<li class="superfish-edit"><a href="/pl/admin/structure/menu/manage/main-menu/edit?destination=node/270">Edycja menu</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/superfish/6/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <ul id="superfish-6" class="menu sf-menu sf-main-menu sf-navbar sf-style-none sf-total-items-3 sf-parent-items-0 sf-single-items-3 superfish-main superfish-processed sf-js-enabled sf-shadow"><li id="menu-2223-6" class="active-trail first odd sf-item-1 sf-depth-2 sf-no-children sfHover sf-breadcrumb"><a href="/pl/node/270" title="W klubie" class="sf-depth-2 sf-depth-2 ajax-link active">Home<span class="bg" style="display: none; height: 0px; width: 100%; background-color: rgb(0, 0, 0);"></span><span class="info">W klubie</span></a></li><li id="menu-1687-6" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/pl/calendar" title="Twój czas na imprezę" class="sf-depth-2 ajax-link">Kalendarz<span class="bg" style="display: none;"></span><span class="info">Twój czas na imprezę</span></a></li><li id="menu-1094-6" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/pl/node/153" title="Napisz do nas" class="sf-depth-2 sf-depth-2 ajax-link">Kontakt<span class="bg" style="display: none;"></span><span class="info">Napisz do nas</span></a></li></ul>
+  </div>
+
+      </div>
+
+  </header>
+  <div class="page mygallery-processed">
+
+<div role="main" id="main-content">
+
+
+
+
+<nav class="tabs"><h2 class="element-invisible">Karty podstawowe</h2><ul class="tabs primary"><li class="active"><a href="/pl/node/270" class="active">Pokaż<span class="element-invisible">(aktywna karta)</span></a></li>
+<li><a href="/pl/node/270/edit">Edytuj</a></li>
+</ul></nav>
+
+              <div class="drupal-messages">
+<div class="messages error">
+<h2 class="element-invisible">Komunikat o błędzie</h2>
+ <ul>
+  <li><em class="placeholder">Notice</em>: Undefined index: main_menu w <em class="placeholder">context_reaction_menu-&gt;execute()</em> (linia <em class="placeholder">62</em> z <em class="placeholder">/sites/all/modules/context/plugins/context_reaction_menu.inc</em>).</li>
+  <li><em class="placeholder">Notice</em>: Undefined index: secondary_menu w <em class="placeholder">context_reaction_menu-&gt;execute()</em> (linia <em class="placeholder">63</em> z <em class="placeholder">/sites/all/modules/context/plugins/context_reaction_menu.inc</em>).</li>
+ </ul>
+</div>
+        </div>
+
+<!--      --><!--        <div class="controllers">-->
+<!--          <a class="playYT"></a>-->
+<!--        </div>-->
+<!--      -->      <div class="controllers-wrapper"></div>
+
+
+
+
+
+
+
+<div id="block-nodeblock-294" class="contextual-links-region  clearfix">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="node-edit first"><a href="/pl/node/294/edit?destination=node/270">Edytuj</a></li>
+<li class="node-delete"><a href="/pl/node/294/delete?destination=node/270">Usuń</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/nodeblock/294/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <div id="node-294" class="node node-nodeblock node-promoted contextual-links-region clearfix" about="/pl/otwarcie-imperium-main-0" typeof="sioc:Item foaf:Document">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="node-edit first"><a href="/pl/node/294/edit?destination=node/270">Edytuj</a></li>
+<li class="node-delete"><a href="/pl/node/294/delete?destination=node/270">Usuń</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/nodeblock/294/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <div class="content">
+
+
+<div class="field field-name-body field-type-text-with-summary">
+
+
+<div class="nodeBlock">
+<h1>O klubie</h1>
+<div>
+<p>
+Klub imperium mieści się w Szczecinie przy Al.Boh. Warszawy 34/35. Składa się z części restauracyjnej, klubowej i koncertowej. Lokal posiada możliwość organizowania kameralnych imprez na 40 osób jak również większych wydarzeń na 750 osób. Naszym gościom proponujemy sale restauracyjna do 170 osób. W ofercie posiadamy bogate menu kuchni polskiej,<br>
+w którym każdy znajdzie coś dla siebie. Wachlarz muzyczny naszej sali klubowej oraz bogaty asortyment baru pozwala naszym gościom na świetną zabawę. Nawet najbardziej wymagający znajda coś dla siebie.
+</p>
+<p>
+Zapraszamy osoby powyżej 23 roku życia, jednak w tygodniu przewidujemy również imprezy studenckie. Ponadto nasz klub jest wielofunkcyjny, oprócz pierwotnego przeznaczenia odbywać się tu będą koncerty, wydarzenia sportowe typu MMA oraz spektakle teatralne i skecze kabaretowe. Organizujemy także imprezy okolicznościowe takie jak: studniówki, osiemnastki, komunie, wesela, chrzciny, stypy, wigilie pracownicze, spotkania biznesowe, imprezy sylwestrowe.
+</p>
+<p>
+SERDECZNIE ZAPRASZAMY
+</p>
+</div>
+</div>
+        </div>
+  </div>
+
+
+
+</div>
+
+  </div>
+
+<div id="block-views-galleries-block-1" class="contextual-links-region  clearfix" style="bottom: -296px; opacity: 1;">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="views-ui-edit first"><a href="/pl/admin/structure/views/view/galleries/edit/block_1?destination=node/270">Edytuj widok</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/views/galleries-block_1/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <div class="view-id-galleries view-display-id-block_1 view-dom-id-761b684694bb9110d3007d10437a33b9">
+<div class="view-header">
+<div class="taker"></div>
+    </div>
+
+
+
+      <div class="view-content">
+<div class="menu-parties">
+<div class="views-row views-row-first">
+
+<div class="views-field views-field-field-party-poster">        <div class="field-content ajax-link"><span class="nowy-tpl">
+<a class="ajax-link" href="/pl/node/161"><img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/miniplakat/public/media_brzozowski-plakat-b1.jpg?itok=HPlr6qqh" width="60" height="60" alt=""></a>  </span>
+
+</div>  </div>
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://imperium.gitsystem.it/pl/node/161" class="ajax-link">Otwarcie Imperium</a></span>  </div>
+  <div class="views-field views-field-field-party-date">        <div class="field-content"><time property="dc:date" datatype="xsd:dateTime" content="2013-09-20T21:00:00+02:00" datetime="2013-09-20T21:00:00+02:00">20.09.2013 - 21:00</time></div>  </div>
+  <div class="views-field views-field-field-tags">        <div class="field-content">Klub</div>  </div>      </div>
+          <div class="views-row">
+
+<div class="views-field views-field-field-party-poster">        <div class="field-content ajax-link"><span class="nowy-tpl">
+<a class="ajax-link" href="/pl/event/imperium-kontratakuje"><img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/miniplakat/public/final_druk_2013-09-20_otwarcie_brzozowski_ulotka_a6-2-01.jpg?itok=P-XTsJC0" width="60" height="60" alt=""></a>  </span>
+
+</div>  </div>
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://imperium.gitsystem.it/pl/event/imperium-kontratakuje" class="ajax-link">Imperium kontratakuje</a></span>  </div>
+  <div class="views-field views-field-field-party-date">        <div class="field-content"><time property="dc:date" datatype="xsd:dateTime" content="2013-09-21T20:00:00+02:00" datetime="2013-09-21T20:00:00+02:00">21.09.2013 - 20:00</time></div>  </div>
+  <div class="views-field views-field-field-tags">        <div class="field-content">Klub</div>  </div>      </div>
+          <div class="views-row">
+
+<div class="views-field views-field-field-party-poster">        <div class="field-content ajax-link"><span class="nowy-tpl">
+<a class="ajax-link" href="/pl/node/162"><img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/miniplakat/public/nowaki_-_ulotka_a5-01.jpg?itok=Y0lwGIlu" width="60" height="60" alt=""></a>  </span>
+
+</div>  </div>
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://imperium.gitsystem.it/pl/node/162" class="ajax-link">Kabaret Nowaki</a></span>  </div>
+  <div class="views-field views-field-field-party-date">        <div class="field-content"><time property="dc:date" datatype="xsd:dateTime" content="2013-09-25T17:30:00+02:00" datetime="2013-09-25T17:30:00+02:00">25.09.2013 - 17:30</time></div>  </div>
+  <div class="views-field views-field-field-tags">        <div class="field-content">Sala koncertowa</div>  </div>      </div>
+          <div class="views-row views-row-last">
+
+<div class="views-field views-field-field-party-poster">        <div class="field-content ajax-link"><span class="nowy-tpl">
+<a class="ajax-link" href="/pl/node/164"><img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/miniplakat/public/final_media_2013-10-10_tsa_plakat_b1.jpg?itok=IF2tuMen" width="60" height="60" alt=""></a>  </span>
+
+</div>  </div>
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://imperium.gitsystem.it/pl/node/164" class="ajax-link">TSA</a></span>  </div>
+  <div class="views-field views-field-field-party-date">        <div class="field-content"><time property="dc:date" datatype="xsd:dateTime" content="2013-10-10T19:00:00+02:00" datetime="2013-10-10T19:00:00+02:00">10.10.2013 - 19:00</time></div>  </div>
+  <div class="views-field views-field-field-tags">        <div class="field-content">Sala koncertowa</div>  </div>      </div>
+      </div>
+    </div>
+
+
+
+
+      <div class="view-footer">
+<div class="viewAnn"><a class="ajax-link" href="/pl/calendar/month" title="">wszystkie</a></div>
+    </div>
+
+
+</div>
+  </div>
+
+<div id="block-views-galleries-block" class="contextual-links-region  clearfix" style="bottom: -74px; opacity: 1;">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="views-ui-edit first"><a href="/pl/admin/structure/views/view/galleries/edit/block?destination=node/270">Edytuj widok</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/views/galleries-block/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <div class="view-id-galleries view-display-id-block view-dom-id-eecfba056c70ff73b5b07b1fbd25c834">
+<div class="view-header">
+<div class="taker"></div>
+    </div>
+
+
+
+      <div class="view-content">
+<div class="menu-parties">
+<div class="views-row views-row-first views-row-last">
+
+<div class="views-field views-field-field-party-poster">        <div class="field-content ajax-link"><span class="nowy-tpl">
+<a class="ajax-link" href="/pl/node/163"><img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/miniplakat/public/nowaki_-_biet_a6-02.jpg?itok=LjARe4Rg" width="60" height="60" alt=""></a>  </span>
+
+</div>  </div>
+  <div class="views-field views-field-title">        <span class="field-content ajax-link"><a href="/pl/node/163" class="ajax-link">Big Bum</a></span>  </div>
+  <div class="views-field views-field-field-party-date">        <div class="field-content"><time property="dc:date" datatype="xsd:dateTime" content="2013-08-31T20:00:00+02:00" datetime="2013-08-31T20:00:00+02:00">31.08.2013 - 20:00</time></div>  </div>
+  <div class="views-field views-field-field-tags">        <div class="field-content">Klub</div>  </div>      </div>
+      </div>
+    </div>
+
+
+
+
+      <div class="view-footer">
+<div class="viewGal"><a class="ajax-link" href="/pl/parties-gallery" title="">wszystkie</a></div>
+    </div>
+
+
+</div>
+  </div>
+
+<div id="block-views-calendar-view-block-1" class="contextual-links-region  clearfix hometoggle-processed" style="bottom: -278px; opacity: 1;">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="views-ui-edit first"><a href="/pl/admin/structure/views/view/calendar_view/edit/block_1?destination=node/270">Edytuj widok</a></li>
+<li class="block-configure last"><a href="/pl/admin/structure/block/manage/views/calendar_view-block_1/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <div class="view-calendar-view view-id-calendar_view view-display-id-block_1 view-dom-id-178cbd92fb0fb9445136a1956b631fbf jquery-once-1-processed">
+<div class="view-header">
+<div class="taker take3"></div>
+<!--<div class="calHeader"></div>--><div class="date-nav-wrapper clearfix">
+<div class="date-nav item-list">
+<div class="date-heading">
+<h3><a href="http://imperium.gitsystem.it/pl/event/2013-09" title="Zobacz miesiąc na oddzielnej stronie">Wrzesień</a></h3>
+    </div>
+    <ul class="pager">
+<li class="date-prev">
+<a href="http://imperium.gitsystem.it/pl/node/270?mini=2013-08" title="Przejdź do poprzedniego miesiąca" rel="nofollow">«</a>      &nbsp;</li>
+              <li class="date-next">&nbsp;
+<a href="http://imperium.gitsystem.it/pl/node/270?mini=2013-10" title="Przejdź do następnego miesiąca" rel="nofollow">»</a>      </li>
+        </ul>
+  </div>
+</div>    </div>
+
+
+
+      <div class="view-content">
+<div class="calendar-calendar"><div class="month-view">
+
+<table class="mini">
+<thead>
+    <tr>
+              <th class="days mon">
+p        </th>
+              <th class="days tue">
+w        </th>
+              <th class="days wed">
+ś        </th>
+              <th class="days thu">
+c        </th>
+              <th class="days fri">
+p        </th>
+              <th class="days sat">
+s        </th>
+              <th class="days sun">
+n        </th>
+          </tr>
+  </thead>
+  <tbody>
+          <tr>
+                  <td id="calendar_view-2013-08-26" class="mon mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-08-27" class="tue mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-08-28" class="wed mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-08-29" class="thu mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-08-30" class="fri mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-08-31" class="sat mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-01" class="sun mini past has-no-events">
+
+<div class="month mini-day-off"> 1 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="calendar_view-2013-09-02" class="mon mini past has-no-events">
+
+<div class="month mini-day-off"> 2 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-03" class="tue mini past has-no-events">
+
+<div class="month mini-day-off"> 3 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-04" class="wed mini past has-no-events">
+
+<div class="month mini-day-off"> 4 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-05" class="thu mini past has-no-events">
+
+<div class="month mini-day-off"> 5 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-06" class="fri mini past has-no-events">
+
+<div class="month mini-day-off"> 6 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-07" class="sat mini past has-no-events">
+
+<div class="month mini-day-off"> 7 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-08" class="sun mini past has-no-events">
+
+<div class="month mini-day-off"> 8 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="calendar_view-2013-09-09" class="mon mini past has-no-events">
+
+<div class="month mini-day-off"> 9 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-10" class="tue mini past has-no-events">
+
+<div class="month mini-day-off"> 10 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-11" class="wed mini past has-no-events">
+
+<div class="month mini-day-off"> 11 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-12" class="thu mini past has-no-events">
+
+<div class="month mini-day-off"> 12 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-13" class="fri mini past has-no-events">
+
+<div class="month mini-day-off"> 13 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-14" class="sat mini past has-no-events">
+
+<div class="month mini-day-off"> 14 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-15" class="sun mini past has-no-events">
+
+<div class="month mini-day-off"> 15 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="calendar_view-2013-09-16" class="mon mini past has-no-events">
+
+<div class="month mini-day-off"> 16 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-17" class="tue mini today has-no-events">
+
+<div class="month mini-day-off"> 17 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-18" class="wed mini future has-no-events">
+
+<div class="month mini-day-off"> 18 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-19" class="thu mini future has-no-events">
+
+<div class="month mini-day-off"> 19 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-20" class="fri mini future has-events">
+
+<div class="month mini-day-on"> <span class="qtip-link beautytips-module-processed" bt-xtitle="" oldtitle="">
+<span class="qtip-header beautytips-module-processed" bt-xtitle="" title="">
+Otwarcie Imperium
+  </span>
+  <span class="qtip-tooltip beautytips-module-processed" bt-xtitle="" title="">
+<img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/medium/public/media_brzozowski-plakat-b1.jpg?itok=sGtwrstt" width="156" height="220" alt="">
+
+</span>
+<a class="ajax-link beautytips-module-processed" href="/pl/calendar/month/2013-09" bt-xtitle="" title="">20</a>
+</span> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-21" class="sat mini future has-events">
+
+<div class="month mini-day-on"> <span class="qtip-link beautytips-module-processed" bt-xtitle="" oldtitle="">
+<span class="qtip-header beautytips-module-processed" bt-xtitle="" title="">
+Imperium kontratakuje
+  </span>
+  <span class="qtip-tooltip beautytips-module-processed" bt-xtitle="" title="">
+<img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/medium/public/final_druk_2013-09-20_otwarcie_brzozowski_ulotka_a6-2-01.jpg?itok=atjpv4tM" width="159" height="220" alt="">
+
+</span>
+<a class="ajax-link beautytips-module-processed" href="/pl/calendar/month/2013-09" bt-xtitle="" title="">21</a>
+</span> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-22" class="sun mini future has-no-events">
+
+<div class="month mini-day-off"> 22 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="calendar_view-2013-09-23" class="mon mini future has-no-events">
+
+<div class="month mini-day-off"> 23 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-24" class="tue mini future has-no-events">
+
+<div class="month mini-day-off"> 24 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-25" class="wed mini future has-events">
+
+<div class="month mini-day-on"> <span class="qtip-link beautytips-module-processed" bt-xtitle="" oldtitle="">
+<span class="qtip-header beautytips-module-processed" bt-xtitle="" title="">
+Kabaret Nowaki
+  </span>
+  <span class="qtip-tooltip beautytips-module-processed" bt-xtitle="" title="">
+<img typeof="foaf:Image" src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/styles/medium/public/nowaki_-_ulotka_a5-01.jpg?itok=gl-NhUz6" width="155" height="220" alt="">
+
+</span>
+<a class="ajax-link beautytips-module-processed" href="/pl/calendar/month/2013-09" bt-xtitle="" title="">25</a>
+</span> </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-26" class="thu mini future has-no-events">
+
+<div class="month mini-day-off"> 26 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-27" class="fri mini future has-no-events">
+
+<div class="month mini-day-off"> 27 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-28" class="sat mini future has-no-events">
+
+<div class="month mini-day-off"> 28 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-09-29" class="sun mini future has-no-events">
+
+<div class="month mini-day-off"> 29 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+          <tr>
+                  <td id="calendar_view-2013-09-30" class="mon mini future has-no-events">
+
+<div class="month mini-day-off"> 30 </div><div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-10-01" class="tue mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-10-02" class="wed mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-10-03" class="thu mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-10-04" class="fri mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-10-05" class="sat mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+                  <td id="calendar_view-2013-10-06" class="sun mini empty">
+<div class="calendar-empty">&nbsp;</div>
+          </td>
+              </tr>
+      </tbody>
+</table>
+</div></div>    </div>
+
+
+
+
+      <div class="view-footer">
+<div class="exp expandBtnCal" style="opacity: 1;">Kalendarz</div>    </div>
+
+
+</div>
+  </div>
+
+<!-- node.tpl.php -->
+<article class="node node-blank " about="/pl/node/270" typeof="sioc:Item foaf:Document" role="article">
+
+
+
+<div class="content">
+</div>
+
+
+
+  <!-- facebook share button at content type: party -->
+</article>
+
+
+                    <div class="exp expandBtnAnn" style="opacity: 1;">Zapowiedzi</div>
+        <div class="exp expandBtnGal" style="opacity: 1;">Galeria</div>
+        <div class="exp expandBtnCal" style="opacity: 1;">Kalendarz</div>
+
+    </div><!-- /main-->
+
+
+      </div><!-- /page-->
+  <footer role="contentinfo">
+
+
+<div id="block-block-1" class="contextual-links-region  clearfix">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="block-configure first last"><a href="/pl/admin/structure/block/manage/block/1/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  Copyright 2013 @ Imperium | Designed by <a class="creators" href="http://grupa.it/">Grupa<span>.</span>IT</a>
+  </div>
+
+    <div id="player"><div id="playBtn" class="playBtn play"></div></div>
+
+  </footer>
+</div>
+
+
+<script src="http://imperium.gitsystem.it/misc/jquery.js?v=1.4.4"></script>
+<script src="http://imperium.gitsystem.it/misc/jquery.once.js?v=1.2"></script>
+<script src="http://imperium.gitsystem.it/misc/drupal.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/qtip/library/jquery.qtip.js?v=2.0.0pre"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/qtip/js/qtip.js?v=2.0.0pre"></script>
+<script src="http://imperium.gitsystem.it/misc/jquery.cookie.js?v=1.0"></script>
+<script src="http://imperium.gitsystem.it/misc/jquery.form.js?v=2.52"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/beautytips/js/jquery.bt.min.js?v=0.9.5-rc1"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/beautytips/js/beautytips.min.js?v=7.x-2.x"></script>
+<script src="http://imperium.gitsystem.it/misc/ajax.js?v=7.23"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/ajax_links_api/ajax_links_api.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/admin_menu/admin_menu.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/imperium.gitsystem.it/files/languages/pl_PPTavp6kYWKbxv26n_wwFwCFkrGBYFcfbbci-_g6H-U.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/libraries/colorbox/colorbox/jquery.colorbox-min.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/colorbox/js/colorbox.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/colorbox/styles/default/colorbox_default_style.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/video/js/video.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/views/js/base.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/misc/progress.js?v=7.23"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/views/js/ajax_view.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/libraries/flexslider/jquery.flexslider-min.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/google_analytics/googleanalytics.js?mt9ogn"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-38723311-3"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+<script src="http://imperium.gitsystem.it/sites/all/themes/mothership/mothership/js/contextual.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/libraries/superfish/superfish.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/libraries/superfish/sfsmallscreen.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/libraries/superfish/supposition.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/libraries/superfish/supersubs.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/superfish/superfish.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/themes/imperiumship/js/script.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/themes/imperiumship/js/player.js?mt9ogn"></script>
+<script src="http://imperium.gitsystem.it/sites/all/themes/imperiumship/js/tweenmax.js?mt9ogn"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"pl\/","ajaxPageState":{"theme":"imperiumship","theme_token":"_9lnelYIFi01-RSIAveDxwygdyICmekl4zKvPkeScT0","js":{"sites\/all\/modules\/flexslider\/assets\/js\/flexslider.load.js":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/qtip\/library\/jquery.qtip.js":1,"sites\/all\/modules\/qtip\/js\/qtip.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"sites\/all\/modules\/beautytips\/js\/jquery.bt.min.js":1,"sites\/all\/modules\/beautytips\/js\/beautytips.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/ajax_links_api\/ajax_links_api.js":1,"sites\/all\/modules\/admin_menu\/admin_menu.js":1,"sites\/all\/modules\/admin_menu\/admin_menu_toolbar\/admin_menu_toolbar.js":1,"public:\/\/languages\/pl_PPTavp6kYWKbxv26n_wwFwCFkrGBYFcfbbci-_g6H-U.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.js":1,"sites\/all\/modules\/video\/js\/video.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"http:\/\/cdnjs.cloudflare.com\/ajax\/libs\/modernizr\/2.0.6\/modernizr.min.js":1,"sites\/all\/themes\/mothership\/mothership\/js\/contextual.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/imperiumship\/js\/script.js":1,"sites\/all\/themes\/imperiumship\/js\/player.js":1,"sites\/all\/themes\/imperiumship\/js\/tweenmax.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/qtip\/library\/jquery.qtip.css":1,"sites\/all\/modules\/qtip\/css\/qtip.css":1,"modules\/contextual\/contextual.css":1,"sites\/all\/modules\/ajax_links_api\/ajax_links_api.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/calendar_tooltips\/calendar_tooltips.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/git\/git_imp\/git_imp_style.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/admin_menu\/admin_menu.css":1,"sites\/all\/modules\/admin_menu\/admin_menu.uid1.css":1,"sites\/all\/modules\/admin_menu\/admin_menu_toolbar\/admin_menu_toolbar.css":1,"modules\/shortcut\/shortcut.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/video\/css\/video.css":1,"sites\/all\/modules\/date\/date_views\/css\/date_views.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-navbar.css":1,"sites\/all\/themes\/mothership\/mothership\/css\/reset.css":1,"sites\/all\/themes\/mothership\/mothership\/css\/reset-html5.css":1,"sites\/all\/themes\/mothership\/mothership\/css\/normalize.css":1,"sites\/all\/themes\/mothership\/mothership\/css\/mothership-default.css":1,"sites\/all\/themes\/mothership\/mothership\/css\/mothership-layout.css":1,"sites\/all\/themes\/imperiumship\/css\/style.css":1,"sites\/all\/themes\/imperiumship\/css\/normalize.css":1,"sites\/imperium.gitsystem.it\/files\/fontyourface\/font.css":1,"public:\/\/fontyourface\/local_fonts\/anton-normal-normal\/stylesheet.css":1,"public:\/\/fontyourface\/local_fonts\/fone-normal-normal\/stylesheet.css":1,"public:\/\/fontyourface\/local_fonts\/fone2-normal-normal\/stylesheet.css":1}},"ajax_links_api":{"selector":"#main-content","trigger":".ajax-link","negative_triggers":"","html5":1,"vpager":1},"colorbox":{"opacity":"0.85","current":"{current} z {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Zamknij","maxWidth":"100%","maxHeight":"100%","fixed":true},"qtip":{"target_position":"top_left","tooltip_position":"bottom_right","show_speech_bubble_tip":0,"show_speech_bubble_tip_side":1,"speech_bubble_size":"12","show_speech_bubble_tip_solid":0,"show_shadow":1,"rounded_corners":0,"color":"custom-color","custom_color":"","show_event_type":"mouseenter","hide_event_type":"mouseleave","show_webform_descriptions":0,"additional_elements":""},"views":{"ajax_path":"\/pl\/views\/ajax","ajaxViews":{"views_dom_id:178cbd92fb0fb9445136a1956b631fbf":{"view_name":"calendar_view","view_display_id":"block_1","view_args":"2013-09","view_path":"node\/270","view_base_path":"event","view_dom_id":"178cbd92fb0fb9445136a1956b631fbf","pager_element":0}}},"flexslider":{"optionsets":{"default":{"namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":"7000","directionNav":true,"controlNav":false,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""}},"instances":{"flexslider-1":"default"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"beautytips":{"calendar-tooltips":{"cssStyles":[],"cssSelect":".calendar-calendar .mini-day-on a, .calendar-calendar .day a, .calendar-calendar .mini-day-on span, .calendar-calendar .day span","contentSelector":"$(this).next().html()","trigger":["mouseover","mouseout"],"list":["cssStyles","contentSelector","trigger"]}},"superfish":[{"id":"2","sf":{"pathLevels":"0","animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":false,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Main menu"},"supposition":true,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}},{"id":"6","sf":{"pathClass":"active-trail","animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":true,"dropShadows":true,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Klub"},"supposition":true,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}],"tableHeaderOffset":"Drupal.admin.height","admin_menu":{"destination":"destination=node\/270","margin_top":1,"position_fixed":1,"toolbar":{"activeTrail":"\/pl"}}});</script>
+
+    <div id="admin-menu" class="admin-menu-site-imperium-gitsystem-it admin-menu-processed admin-menu-position-fixed" style="position: fixed;"><div id="admin-menu-wrapper">
+<ul id="admin-menu-icon" class="dropdown"><li class="admin-menu-icon admin-menu-toolbar-category expandable"><a href="/pl" class="active active-trail"><span>Strona główna</span></a>
+<ul class="dropdown"><li><a href="/pl/admin/index">Indeks</a></li><li class="expandable"><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache?token=QimCYnpHj1H-W9u8yrmCPaVWTWZFF4d7n80N908binM&amp;destination=node/270" class="admin-menu-destination">Wyczyść wszystkie pamięci podręczne</a>
+<ul class="dropdown"><li><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache/assets?token=j1-n_t1Zx5CDqF1UthgXr3lEGTF5rLBpOlSnfIVHnSw&amp;destination=node/270" class="admin-menu-destination">CSS and JavaScript</a></li><li><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache/menu?token=HcdSHWuXsVWBj58zc3kOfWv7SzmxRxcdtLvwf480X7I&amp;destination=node/270" class="admin-menu-destination">Menu</a></li><li><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache/admin_menu?token=vxC7ECvesZnsTh2p6DqNAKC6WPswd0JeyBWHpAl5Y7o&amp;destination=node/270" class="admin-menu-destination">Menu administracyjne</a></li><li><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache/cache?token=UVq4sX4Jyx8NH2DfnJvPj4cke2uoCBEMhItYmaRmzvk&amp;destination=node/270" class="admin-menu-destination">Page and else</a></li><li><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache/registry?token=DP3WLnp24A8qYUk2I0eLQdqxi-AvtcRwn4S6TzwgQkc&amp;destination=node/270" class="admin-menu-destination">Rejestr klas</a></li><li><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache/theme?token=Ivp-5c00E5TUjk8dE-CKJ15nXXLelIBmu4KzT_rxHfk&amp;destination=node/270" class="admin-menu-destination">Rejestr skórki</a></li><li><a href="http://imperium.gitsystem.it/pl/token/flush-cache?token=0vw2aBc_uJihJGKyv3Nm_Va6sjdtLAvIOVaL1u476YQ&amp;destination=node/270" class="admin-menu-destination">Rejestr wzorców</a></li><li><a href="http://imperium.gitsystem.it/pl/admin_menu/flush-cache/update?token=gNgSr1s_FDCos7Whu1Mmg6VlfaodnNAXlUVIUkQ5Vl4&amp;destination=node/270" class="admin-menu-destination">Update data</a></li></ul></li><li><a href="/update.php">Uruchom aktualizacje</a></li><li><a href="/pl/admin/reports/status/run-cron">Uruchom cron</a></li><li><a href="http://imperium.gitsystem.it/pl/admin_menu/toggle-modules?token=h1fPCH9MHqkrcgwtPQiVxMEAqXXHZMRQbrNh1LmBR_c&amp;destination=node/270" class="admin-menu-destination">Wyłącz moduły deweloperskie</a></li><li class="expandable"><a href="http://drupal.org">Drupal.org</a>
+<ul class="dropdown"><li><a href="http://drupal.org/project/issues/drupal?version=7.x">Block kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/fontyourface?version=7.x">@font-your-face kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/addressfield?version=7.x">Address Field kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/admin_menu?version=7.x">Administration menu kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/ajax_links_api?version=7.x">Ajax links API kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/beautytips?version=7.x">BeautyTips API kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/calendar?version=7.x">Calendar kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/calendar_tooltips?version=7.x">Calendar Tooltips kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/commerce?version=7.x">Cart kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/ctools?version=7.x">Chaos tools kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/colorbox?version=7.x">Colorbox kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/commerce_payu?version=7.x">Commerce PayU kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/context?version=7.x">Context kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/date?version=7.x">Date kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/disable_breadcrumbs?version=7.x">Disable breadcrumbs kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/disable_messages?version=7.x">Disable messages kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/entity?version=7.x">Entity API kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/entityreference?version=7.x">Entity Reference kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/epsacrop?version=7.x">Epsa Crop kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/fb_social?version=7.x">fb social kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/media?version=7.x">File entity kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/flexslider?version=7.x">FlexSlider kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/google_analytics?version=7.x">Google Analytics kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/libraries?version=7.x">Libraries kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/l10n_update?version=7.x">Localization update kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/maxlength?version=7.x">Maxlength kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/media_vimeo?version=7.x">Media: Vimeo kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/media_youtube?version=7.x">Media: YouTube kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/metatag?version=7.x">Metatag kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/module_filter?version=7.x">Module filter kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/multiupload_filefield_widget?version=7.x">Multiupload Filefield Widget kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/multiupload_imagefield_widget?version=7.x">Multiupload Imagefield Widget kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/nodeblock?version=7.x">Nodeblock kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/pathauto?version=7.x">Pathauto kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/payment_commerce?version=7.x">Payment for Drupal Commerce kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/payment?version=7.x">Payment kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/qtip?version=7.x">qTip Tooltips kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/quicktabs?version=7.x">Quicktabs kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/rules_link?version=7.x">Rules Link kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/rules?version=7.x">Rules UI kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/superfish?version=7.x">Superfish kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/token?version=7.x">Token kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/transliteration?version=7.x">Transliteration kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/variable?version=7.x">Variable realm kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/i18n?version=7.x">Variable translation kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/videojs?version=7.x">Video.js kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/video?version=7.x">Video kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/views_accordion?version=7.x">Views Accordion kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/views_bulk_operations?version=7.x">Views Bulk Operations kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/views_field_view?version=7.x">Views Field View kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/views_php?version=7.x">Views PHP kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/views_responsive_grid?version=7.x">Views Responsive Grid kolejka zgłoszeń</a></li><li><a href="http://drupal.org/project/issues/views?version=7.x">Views UI kolejka zgłoszeń</a></li></ul></li></ul></li></ul>
+<ul id="admin-menu-menu" class="dropdown"><li class="admin-menu-toolbar-category"><a href="/pl/admin/dashboard">Kokpit</a></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/content">Zawartość</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/node/add">Dodaj treść</a>
+<ul class="dropdown"><li><a href="/pl/node/add/article">Article</a></li><li><a href="/pl/node/add/page">Basic page</a></li><li><a href="/pl/node/add/dj">Dj</a></li><li><a href="/pl/node/add/blank">Empty page</a></li><li><a href="/pl/node/add/party">Impreza</a></li><li><a href="/pl/node/add/nodeblock">NodeBlock</a></li><li><a href="/pl/node/add/potrawa">Potrawa</a></li><li><a href="/pl/node/add/slide-indeed">Slide</a></li></ul></li><li class="expandable"><a href="/pl/admin/content/comment">Komentarze</a>
+<ul class="dropdown"><li><a href="/pl/admin/content/comment/approval">Niezatwierdzone komentarze (0)</a></li></ul></li><li class="expandable"><a href="/pl/admin/content/media">Media</a>
+<ul class="dropdown"><li><a href="/pl/admin/content/media/import">Import media</a></li></ul></li><li><a href="/pl/admin/content/payment">Płatności</a></li></ul></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/structure">Struktura</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/block">Bloki</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/block/add">Dodaj blok</a></li><li class="expandable"><a href="/pl/admin/structure/block/list/seven">Seven</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/block/list/seven/add">Dodaj blok</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/fbsocial">Facebook social</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/fbsocial/presets">Zestawy</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/fbsocial/presets/add">Dodaj</a></li><li><a href="/pl/admin/structure/fbsocial/presets/import">Importuj</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/taxonomy">Kategorie</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/taxonomy/add">Dodaj słownik</a></li><li class="expandable"><a href="/pl/admin/structure/taxonomy/place">Pokaż w</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/taxonomy/place/add">Dodaj termin</a></li><li><a href="/pl/admin/structure/taxonomy/place/edit">Edytuj</a></li><li><a href="/pl/admin/structure/taxonomy/place/fields">Zarządzaj polami</a></li><li><a href="/pl/admin/structure/taxonomy/place/display">Zarządzaj wyświetlaniem</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/taxonomy/rodzaj_potrawy">Rodzaj potrawy</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/taxonomy/rodzaj_potrawy/add">Dodaj termin</a></li><li><a href="/pl/admin/structure/taxonomy/rodzaj_potrawy/edit">Edytuj</a></li><li><a href="/pl/admin/structure/taxonomy/rodzaj_potrawy/fields">Zarządzaj polami</a></li><li><a href="/pl/admin/structure/taxonomy/rodzaj_potrawy/display">Zarządzaj wyświetlaniem</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/taxonomy/tags">Tags</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/taxonomy/tags/add">Dodaj termin</a></li><li><a href="/pl/admin/structure/taxonomy/tags/edit">Edytuj</a></li><li><a href="/pl/admin/structure/taxonomy/tags/fields">Zarządzaj polami</a></li><li><a href="/pl/admin/structure/taxonomy/tags/display">Zarządzaj wyświetlaniem</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/context">Kontekst</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/context/add">Dodaj</a></li><li><a href="/pl/admin/structure/context/import">Importuj</a></li><li><a href="/pl/admin/structure/context/settings">Ustawienia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/menu">Menu</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/menu/add">Dodaj menu</a></li><li class="expandable"><a href="/pl/admin/structure/menu/manage/main-menu">Main menu</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/menu/manage/main-menu/add">Dodaj odnośnik</a></li><li><a href="/pl/admin/structure/menu/manage/main-menu/edit">Edycja menu</a></li><li><a href="/pl/admin/structure/menu/manage/main-menu/delete">Usuń menu</a></li><li><a href="/pl/admin/structure/menu/manage/main-menu/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/menu/manage/management">Management</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/menu/manage/management/add">Dodaj odnośnik</a></li><li><a href="/pl/admin/structure/menu/manage/management/edit">Edycja menu</a></li><li><a href="/pl/admin/structure/menu/manage/management/delete">Usuń menu</a></li><li><a href="/pl/admin/structure/menu/manage/management/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/menu/manage/navigation">Navigation</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/menu/manage/navigation/add">Dodaj odnośnik</a></li><li><a href="/pl/admin/structure/menu/manage/navigation/edit">Edycja menu</a></li><li><a href="/pl/admin/structure/menu/manage/navigation/delete">Usuń menu</a></li><li><a href="/pl/admin/structure/menu/manage/navigation/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/menu/manage/user-menu">User menu</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/menu/manage/user-menu/add">Dodaj odnośnik</a></li><li><a href="/pl/admin/structure/menu/manage/user-menu/edit">Edycja menu</a></li><li><a href="/pl/admin/structure/menu/manage/user-menu/delete">Usuń menu</a></li><li><a href="/pl/admin/structure/menu/manage/user-menu/translate">Tłumaczenia</a></li></ul></li><li><a href="/pl/admin/structure/menu/settings">Ustawienia</a></li><li class="expandable"><a href="/pl/admin/structure/menu/manage/translation">Zbiory tłumaczeń</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/menu/manage/translation/add">Add translation</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/quicktabs">Quicktabs</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/quicktabs/add">Add Quicktabs Instance</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types">Rodzaje zawartości</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/add">Nowy typ zawartości</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/article">Article</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/article/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/article/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/article/fields/body">Body</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/article/fields/body/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/article/fields/body/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/article/fields/body/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/article/fields/field_image">Image</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/article/fields/field_image/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/article/fields/field_image/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/article/fields/field_image/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/article/fields/field_tags">Tags</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/article/fields/field_tags/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/article/fields/field_tags/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/article/fields/field_tags/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/article/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/article/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/article/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/page">Basic page</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/page/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/page/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/page/fields/body">Body</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/page/fields/body/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/page/fields/body/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/page/fields/body/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/page/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/page/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/page/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/dj">Dj</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/dj/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/dj/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/dj/fields/body">Body</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/dj/fields/body/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/dj/fields/body/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/dj/fields/body/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_name">Dj Name</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_name/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_name/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_name/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_photo">Dj Photo</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_photo/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_photo/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/dj/fields/field_dj_photo/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/dj/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/dj/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/dj/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/blank">Empty page</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/blank/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/blank/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/blank/fields/body">Body</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/blank/fields/body/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/blank/fields/body/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/blank/fields/body/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/blank/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/blank/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/blank/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party">Impreza</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/party/fields/body">Body</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/fields/body/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/body/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/body/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party/fields/field_party_date">Data imprezy</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_date/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_date/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_date/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party/fields/field_available_lodges">Dostępne loże</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/fields/field_available_lodges/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_available_lodges/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_available_lodges/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party/fields/field_party_gallery">Galeria imprezy</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_gallery/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_gallery/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_gallery/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party/fields/field_party_poster">Plakat imprezy</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_poster/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_poster/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_party_poster/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party/fields/field_tags">Pokaż w</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/fields/field_tags/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_tags/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/party/fields/field_tags/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/party/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/party/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/party/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/nodeblock">NodeBlock</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/nodeblock/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/nodeblock/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/nodeblock/fields/body">Body</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/nodeblock/fields/body/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/nodeblock/fields/body/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/nodeblock/fields/body/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/nodeblock/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/nodeblock/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/nodeblock/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/potrawa">Potrawa</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/potrawa/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/potrawa/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/potrawa/fields/body">Body</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/potrawa/fields/body/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/potrawa/fields/body/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/potrawa/fields/body/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/potrawa/fields/field_cena_potrawy">Cena potrawy</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/potrawa/fields/field_cena_potrawy/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/potrawa/fields/field_cena_potrawy/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/potrawa/fields/field_cena_potrawy/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/potrawa/fields/field_rodzaj_potrawy">Rodzaj potrawy</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/potrawa/fields/field_rodzaj_potrawy/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/potrawa/fields/field_rodzaj_potrawy/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/potrawa/fields/field_rodzaj_potrawy/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/potrawa/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/potrawa/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/potrawa/translate">Tłumaczenia</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/slide_indeed">Slide</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/slide_indeed/delete">Usuń</a></li><li class="expandable"><a href="/pl/admin/structure/types/manage/slide_indeed/fields">Zarządzaj polami</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_additional_settings">Dodatkowe ustawienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_additional_settings/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_additional_settings/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_additional_settings/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_img_slide">ObrazGłówny</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_img_slide/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_img_slide/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_img_slide/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_tags">Pokaż w</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_tags/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_tags/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_tags/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_video_slide">Wideo</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_video_slide/widget-type">Typ kontrolki</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_video_slide/field-settings">Ustawienia pola</a></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/fields/field_video_slide/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/types/manage/slide_indeed/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/types/manage/slide_indeed/display/teaser">Skrót</a></li></ul></li><li><a href="/pl/admin/structure/types/manage/slide_indeed/translate">Tłumaczenia</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/structure/views">Widoki</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/views/add-template">Dodaj widok z szablonu</a></li><li><a href="/pl/admin/structure/views/import">Importuj</a></li><li><a href="/pl/admin/structure/views/add">Nowy widok</a></li><li><a href="/pl/admin/structure/views/view/fontyourface_browse">@font-your-face Browse (Czcionka)</a></li><li><a href="/pl/admin/structure/views/view/admin_party_list">Admin party list (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/calendar_view">Calendar-view (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/calendar_for_manager">Calendar for manager (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/commerce_customer_profiles">Customer profiles (Profil klienta Commerce)</a></li><li><a href="/pl/admin/structure/views/view/dj_view">Dj_View (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/galleries">Galeries (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/gallery_per_party">Gallery per Party (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/party_calender">Kalendarz imprez (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/commerce_line_item_table">Line items (Pozycja zamówienia Commerce)</a></li><li><a href="/pl/admin/structure/views/view/menu_gallery">Menu gallery (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/menu_potraw">menu potraw (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/commerce_payment_order">Order payments (Transakcja płatności Commerce)</a></li><li><a href="/pl/admin/structure/views/view/commerce_order_revisions">Order revisions (Commerce Order revision)</a></li><li><a href="/pl/admin/structure/views/view/commerce_orders">Orders (Zamówienie Commerce)</a></li><li><a href="/pl/admin/structure/views/view/parties_gallery">Parties gallery (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/payment_methods">Payment methods (Metoda płatności)</a></li><li><a href="/pl/admin/structure/views/view/payments">Payments (Płatność)</a></li><li><a href="/pl/admin/structure/views/view/commerce_product_revisions">Product revisions (Commerce Product revision)</a></li><li><a href="/pl/admin/structure/views/view/commerce_products">Products (Commerce Product)</a></li><li><a href="/pl/admin/structure/views/view/reserved_lodges">Reserved lodges (Zamówienie Commerce)</a></li><li><a href="/pl/admin/structure/views/view/rules_scheduler">rules_scheduler (Scheduled Rules components)</a></li><li><a href="/pl/admin/structure/views/view/commerce_cart_block">Shopping cart block (Zamówienie Commerce)</a></li><li><a href="/pl/admin/structure/views/view/commerce_cart_form">Shopping cart form (Zamówienie Commerce)</a></li><li><a href="/pl/admin/structure/views/view/commerce_cart_summary">Shopping cart summary (Zamówienie Commerce)</a></li><li><a href="/pl/admin/structure/views/view/slider_machine">Slider (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/upcoming_events">Upcoming events (Zawartość)</a></li><li><a href="/pl/admin/structure/views/view/commerce_user_orders">User orders (Zamówienie Commerce)</a></li><li class="expandable"><a href="/pl/admin/structure/views/settings">Ustawienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/structure/views/settings/advanced">Zaawansowane</a></li></ul></li></ul></li></ul></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/commerce">Sklep</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/commerce/products">Produkty</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/commerce/products/types">Typy produktów</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/add">Dodaj typ produktu</a></li><li class="expandable"><a href="/pl/admin/commerce/products/types/club-lodge">Club Lodge</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/club-lodge/fields">Zarządzaj polami</a></li><li class="expandable"><a href="/pl/admin/commerce/products/types/club-lodge/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/club-lodge/display/line_item">Pozycja zamówienia</a></li><li><a href="/pl/admin/commerce/products/types/club-lodge/display/node_teaser">Węzeł: Skrót</a></li></ul></li><li><a href="/pl/admin/commerce/products/types/club-lodge/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/products/types/concert-hall-lodge">Concert Hall Lodge</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/concert-hall-lodge/fields">Zarządzaj polami</a></li><li class="expandable"><a href="/pl/admin/commerce/products/types/concert-hall-lodge/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/concert-hall-lodge/display/line_item">Pozycja zamówienia</a></li><li><a href="/pl/admin/commerce/products/types/concert-hall-lodge/display/node_teaser">Węzeł: Skrót</a></li></ul></li><li><a href="/pl/admin/commerce/products/types/concert-hall-lodge/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/products/types/product">Produkt</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/product/fields">Zarządzaj polami</a></li><li class="expandable"><a href="/pl/admin/commerce/products/types/product/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/product/display/line_item">Pozycja zamówienia</a></li><li><a href="/pl/admin/commerce/products/types/product/display/node_teaser">Węzeł: Skrót</a></li></ul></li><li><a href="/pl/admin/commerce/products/types/product/delete">Usuń</a></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/products/types/restaurant-lodge">Restaurant Lodge</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/restaurant-lodge/fields">Zarządzaj polami</a></li><li class="expandable"><a href="/pl/admin/commerce/products/types/restaurant-lodge/display">Zarządzaj wyświetlaniem</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/types/restaurant-lodge/display/line_item">Pozycja zamówienia</a></li><li><a href="/pl/admin/commerce/products/types/restaurant-lodge/display/node_teaser">Węzeł: Skrót</a></li></ul></li><li><a href="/pl/admin/commerce/products/types/restaurant-lodge/delete">Usuń</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/products/add">Dodaj produkt</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/products/add/club-lodge">Dodaj Club Lodge</a></li><li><a href="/pl/admin/commerce/products/add/concert-hall-lodge">Dodaj Concert Hall Lodge</a></li><li><a href="/pl/admin/commerce/products/add/product">Dodaj Product</a></li><li><a href="/pl/admin/commerce/products/add/restaurant-lodge">Dodaj Restaurant Lodge</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/customer-profiles">Profile klienta</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/commerce/customer-profiles/types">Typy profilów</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/commerce/customer-profiles/types/billing">Dane do płatności</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/customer-profiles/types/billing/fields">Zarządzaj polami</a></li><li><a href="/pl/admin/commerce/customer-profiles/types/billing/display">Zarządzaj wyświetlaniem</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/customer-profiles/add">Dodaj profil klienta</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/customer-profiles/add/billing">Stwórz Dane do płatności</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/orders">Zamówienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/orders/carts">Shopping carts</a></li><li><a href="/pl/admin/commerce/orders/add">Stwórz zamówienie</a></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/config">Konfiguracja</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/commerce/config/payment-methods">Metody płatności</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/config/payment-methods/add">Dodaj regułę metody płatności</a></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/config/product-pricing">Reguły cen produktów</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/config/product-pricing/pre-calculation">Wstępne obliczanie</a></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/config/line-items">Typy pozycji zamówienia</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/commerce/config/line-items/product">Produkt</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/config/line-items/product/fields">Zarządzaj polami</a></li><li><a href="/pl/admin/commerce/config/line-items/product/display">Zarządzaj wyświetlaniem</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/commerce/config/checkout">Ustawienia realizacji zamówienia</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/commerce/config/checkout/rules">Reguły składania zamówienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/config/checkout/rules/add">Dodaj regułę składania zamówienia</a></li></ul></li></ul></li><li><a href="/pl/admin/commerce/config/currency">Ustawienia walut</a></li><li class="expandable"><a href="/pl/admin/commerce/config/order">Ustawienia zamówienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/commerce/config/order/fields">Zarządzaj polami</a></li><li><a href="/pl/admin/commerce/config/order/display">Zarządzaj wyświetlaniem</a></li></ul></li></ul></li></ul></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/appearance">Wygląd</a>
+<ul class="dropdown"><li><a href="/pl/admin/appearance/install">Instalacja nowej skórki</a></li><li><a href="/pl/admin/appearance/disable_breadcrumbs">Disable breadcrumbs</a></li><li class="expandable"><a href="/pl/admin/appearance/fontyourface">@font-your-face</a>
+<ul class="dropdown"><li><a href="/pl/admin/appearance/fontyourface/browse">Przeglądaj wszystkie czcionki</a></li></ul></li><li><a href="/pl/admin/appearance/update">Aktualizuj</a></li><li class="expandable"><a href="/pl/admin/appearance/settings">Ustawienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/appearance/settings/imperiumship">imperiumship</a></li><li><a href="/pl/admin/appearance/settings/seven">Seven</a></li></ul></li></ul></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/people">Ludzie</a>
+<ul class="dropdown"><li><a href="/pl/admin/people/create">Dodaj użytkownika</a></li><li class="expandable"><a href="/pl/admin/people/permissions">Uprawnienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/people/permissions/roles">Role</a></li></ul></li></ul></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/modules">Moduły</a>
+<ul class="dropdown"><li><a href="/pl/admin/modules/install">Instalacja nowego modułu</a></li><li><a href="/pl/admin/modules/update">Aktualizuj</a></li><li><a href="/pl/admin/modules/uninstall">Odinstaluj</a></li></ul></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/config">Konfiguracja</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/config/administration">Administracja</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/administration/admin_menu">Menu administracyjne</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/content">Autoryzacja zawartości</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/config/content/formats">Formaty tekstu</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/content/formats/add">Dodaj format tekstu</a></li><li class="expandable"><a href="/pl/admin/config/content/formats/filtered_html">Filtered HTML</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/content/formats/filtered_html/disable">Wyłącz format tekstu</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/content/formats/full_html">Full HTML</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/content/formats/full_html/disable">Wyłącz format tekstu</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/content/formats/php_code">PHP code</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/content/formats/php_code/disable">Wyłącz format tekstu</a></li></ul></li><li><a href="/pl/admin/config/content/formats/plain_text">Plain text</a></li></ul></li><li><a href="/pl/admin/config/content/qtip">qTip</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/date">Date API</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/date/date_popup">Date Popup</a></li><li><a href="/pl/admin/config/date/calendar">Kalendarz</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/development">Dla deweloperów</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/development/performance">Wydajność</a></li><li><a href="/pl/admin/config/development/logging">Dziennik i błędy</a></li><li><a href="/pl/admin/config/development/maintenance">Przerwa techniczna</a></li><li><a href="/pl/admin/config/development/ajax-links-api">Ajax links API</a></li><li><a href="/pl/admin/config/development/disable-messages">Disable messages</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/user-interface">Interfejs użytkownika</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/config/user-interface/fontyourface">@font-your-face settings</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/user-interface/fontyourface/local_fonts">Import Local Font</a></li></ul></li><li><a href="/pl/admin/config/user-interface/beautytips">BeautyTips</a></li><li><a href="/pl/admin/config/user-interface/calendar_tooltips">Calendar tooltips</a></li><li><a href="/pl/admin/config/user-interface/modulefilter">Module filter</a></li><li class="expandable"><a href="/pl/admin/config/user-interface/shortcut">Skróty</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/user-interface/shortcut/add-set">Dodaj zestaw skrótów</a></li></ul></li><li><a href="/pl/admin/config/user-interface/superfish">Superfish</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/people">Ludzie</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/config/people/accounts">Ustawienia konta</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/people/accounts/fields">Zarządzaj polami</a></li><li><a href="/pl/admin/config/people/accounts/display">Zarządzaj wyświetlaniem</a></li></ul></li><li><a href="/pl/admin/config/people/ip-blocking">Blokowanie adresów IP</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/media">Media</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/config/media/file-system">System plików</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/media/file-system/transliteration">Transliteracja</a></li></ul></li><li><a href="/pl/admin/config/media/colorbox">Colorbox</a></li><li class="expandable"><a href="/pl/admin/config/media/flexslider">FlexSlider</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/media/flexslider/add">Dodaj</a></li><li><a href="/pl/admin/config/media/flexslider/import">Importuj</a></li><li><a href="/pl/admin/config/media/flexslider/advanced">Zaawansowane ustawienia</a></li></ul></li><li><a href="/pl/admin/config/media/browser">Media browser settings</a></li><li><a href="/pl/admin/config/media/rebuild_types">Rebuild type information for media</a></li><li class="expandable"><a href="/pl/admin/config/media/image-styles">Style obrazków</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/media/image-styles/add">Dodaj styl</a></li></ul></li><li><a href="/pl/admin/config/media/file-types">Typy plików</a></li><li><a href="/pl/admin/config/media/videojs">Video.js</a></li><li class="expandable"><a href="/pl/admin/config/media/video">Wideo</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/media/video/players">Players</a></li><li><a href="/pl/admin/config/media/video/transcoders">Transcoders</a></li><li class="expandable"><a href="/pl/admin/config/media/video/presets">Zestawy</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/media/video/presets/add">Add preset</a></li><li><a href="/pl/admin/config/media/video/presets/import">Import preset</a></li></ul></li><li><a href="/pl/admin/config/media/video/scheduling">Harmonogram</a></li></ul></li><li><a href="/pl/admin/config/media/image-toolkit">Zestaw narzędzi przetwarzania obrazków</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/workflow">Przepływ pracy</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/config/workflow/rules">Reguły</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/workflow/rules/schedule">Harmonogram</a></li><li class="expandable"><a href="/pl/admin/config/workflow/rules/components">Komponenty</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/workflow/rules/components/add">Dodaj nowy komponent</a></li><li><a href="/pl/admin/config/workflow/rules/components/import">Importuj komponent</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/workflow/rules/settings">Ustawienia</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/workflow/rules/settings/advanced">Zaawansowane</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/config/workflow/rules_links">Rules Links</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/workflow/rules_links/add"></a></li><li><a href="/pl/admin/config/workflow/rules_links/import"></a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/config/regional">Regionalne i językowe</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/regional/settings">Ustawienia regionalne</a></li><li class="expandable"><a href="/pl/admin/config/regional/date-time">Data i czas</a>
+<ul class="dropdown"><li class="expandable"><a href="/pl/admin/config/regional/date-time/formats">Formaty</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/regional/date-time/formats/add">Dodaj format</a></li></ul></li><li><a href="/pl/admin/config/regional/date-time/locale">Lokalizacja</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/regional/language">Języki</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/regional/language/add">Dodaj język</a></li><li><a href="/pl/admin/config/regional/language/configure">Wykrywanie i wybór</a></li><li><a href="/pl/admin/config/regional/language/update">Aktualizacje tłumaczeń</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/regional/translate">Tłumaczenie interfejsu</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/regional/translate/translate">Tłumaczenia</a></li><li><a href="/pl/admin/config/regional/translate/update">Aktualizuj</a></li><li><a href="/pl/admin/config/regional/translate/import">Importuj</a></li><li><a href="/pl/admin/config/regional/translate/i18n_string">Napisy</a></li><li><a href="/pl/admin/config/regional/translate/export">Eksportuj</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/regional/i18n">Ustawienia obsługi wielojęzyczności</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/regional/i18n/variable">Zmienne</a></li><li><a href="/pl/admin/config/regional/i18n/node">Opcje węzłów</a></li><li><a href="/pl/admin/config/regional/i18n/strings">Napisy</a></li></ul></li><li><a href="/pl/admin/config/regional/i18n_translation">Zbiory tłumaczeń</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/system">System</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/system/site-information">Podstawowe dane</a></li><li><a href="/pl/admin/config/system/actions">Akcje</a></li><li><a href="/pl/admin/config/system/googleanalytics">Google Analytics</a></li><li><a href="/pl/admin/config/system/cron">Cron</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/services">Usługi web</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/services/rss-publishing">Publikacja RSS</a></li><li class="expandable"><a href="/pl/admin/config/services/payment">Płatność</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/services/payment/global">Global configuration</a></li><li class="expandable"><a href="/pl/admin/config/services/payment/method">Metody płatności</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/services/payment/method/add">Dodaj metodę płatności</a></li></ul></li><li><a href="/pl/admin/config/services/payment/payment_commerce">Payment for Drupal Commerce</a></li><li class="expandable"><a href="/pl/admin/config/services/payment/payment">Płatności</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/services/payment/payment/display">Zarządzaj wyświetlaniem</a></li></ul></li><li><a href="/pl/admin/config/services/payment/status">Statusy płatności</a></li></ul></li></ul></li><li class="expandable"><a href="/pl/admin/config/search">Wyszukiwanie i metadane</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/search/settings">Ustawienia wyszukiwarki</a></li><li class="expandable"><a href="/pl/admin/config/search/path">Aliasy adresów</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/search/path/add">Dodaj alias</a></li><li><a href="/pl/admin/config/search/path/patterns">Wzory</a></li><li><a href="/pl/admin/config/search/path/settings">Ustawienia</a></li><li><a href="/pl/admin/config/search/path/update_bulk">Aktualizacja masowa</a></li><li><a href="/pl/admin/config/search/path/delete_bulk">Usuń&nbsp;aliasy</a></li></ul></li><li class="expandable"><a href="/pl/admin/config/search/metatags">Metatagi</a>
+<ul class="dropdown"><li><a href="/pl/admin/config/search/metatags/bulk-revert">Bulk revert</a></li></ul></li><li><a href="/pl/admin/config/search/clean-urls">Przyjazne adresy</a></li></ul></li></ul></li><li class="admin-menu-toolbar-category expandable"><a href="/pl/admin/reports">Raporty</a>
+<ul class="dropdown"><li><a href="/pl/admin/reports/status">Raport o stanie witryny</a></li><li class="expandable"><a href="/pl/admin/reports/updates">Nowe wersje</a>
+<ul class="dropdown"><li><a href="/pl/admin/reports/updates/install">Instalacja nowego modułu lub skórki</a></li><li><a href="/pl/admin/reports/updates/update">Aktualizuj</a></li><li><a href="/pl/admin/reports/updates/settings">Ustawienia</a></li></ul></li><li><a href="/pl/admin/reports/dblog">Ostatnie wpisy dziennika</a></li><li class="expandable"><a href="/pl/admin/reports/fields">Lista pól</a>
+<ul class="dropdown"><li><a href="/pl/admin/reports/fields/views-fields">Used in views</a></li></ul></li><li><a href="/pl/admin/reports/page-not-found">Najczęstsze błędy nieznalezienia strony</a></li><li><a href="/pl/admin/reports/access-denied">Najczęstsze błędy odmowy dostępu</a></li><li><a href="/pl/admin/reports/search">Najpopularniejsze słowa kluczowe</a></li><li><a href="/pl/admin/reports/views-plugins">Pluginy widoków</a></li></ul></li><li class="admin-menu-toolbar-category"><a href="/pl/admin/help">Pomoc</a></li></ul>
+<ul id="admin-menu-account" class="dropdown"><li class="admin-menu-action"><a href="/pl/user/logout">Wyloguj</a></li><li class="admin-menu-action admin-menu-account"><a href="/pl/user/1">Witaj <strong>admin</strong></a></li></ul></div></div><div id="fb-root" class=" fb_reset"><script async="" src="http://connect.facebook.net/pl_PL/all.js"></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="http://static.ak.facebook.com/connect/xd_arbiter.php?version=27#channel=f7f8e0f8&amp;channel_path=%2Ffb_social%2Fchannel%3Ffb_xd_fragment%23xd_sig%3Df8bfa9fc8%26&amp;origin=http%3A%2F%2Fimperium.gitsystem.it" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=27#channel=f7f8e0f8&amp;channel_path=%2Ffb_social%2Fchannel%3Ffb_xd_fragment%23xd_sig%3Df8bfa9fc8%26&amp;origin=http%3A%2F%2Fimperium.gitsystem.it" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><script type="text/javascript">
+window.fbAsyncInit = function() {
+FB.init({
+  appId: "",
+  status: true,
+cookie: true,
+xfbml: true,
+oauth : true,
+channelUrl: "http:\/\/imperium.gitsystem.it\/fb_social\/channel"
+});
+
+FB.Event.subscribe("edge.create", function(href, widget) {
+  _gaq.push(["_trackEvent", "Facebook like", "Drupal", href]);
+});
+  };
+(function() {
+  var e = document.createElement('script');
+  e.async = true;
+  e.src = document.location.protocol + '//connect.facebook.net/pl_PL/all.js';
+  document.getElementById('fb-root').appendChild(e);
+}());
+</script>
+<script src="http://imperium.gitsystem.it/sites/all/modules/flexslider/assets/js/flexslider.load.js?mt9ogn"></script>
+
+
+
+<div id="facebook">
+
+
+<div id="block-block-2" class="contextual-links-region  clearfix" style="left: -38px;">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="block-configure first last"><a href="/pl/admin/structure/block/manage/block/2/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <a href="#" class="facebookButton"></a>
+  </div>
+
+<div id="block-fb-social-likebox-imperium" class="contextual-links-region  clearfix">
+
+<div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Konfiguruj</a><ul class="contextual-links"><li class="block-configure first last"><a href="/pl/admin/structure/block/manage/fb_social/Likebox%20Imperium/configure?destination=node/270">Konfiguracja bloku</a></li>
+</ul></div>
+
+  <div class="fb-social-likebox-plugin">
+<fb:like-box href="https://www.facebook.com/imperiumszczecin?fref=ts" width="183" height="323" colorscheme="light" show_faces="true" border_color="" stream="false" header="true" force_wall="false" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;force_wall=false&amp;header=true&amp;height=323&amp;href=https%3A%2F%2Fwww.facebook.com%2Fimperiumszczecin%3Ffref%3Dts&amp;locale=pl_PL&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=183"><span style="vertical-align: bottom; width: 183px; height: 323px;"><iframe name="f325fdc4f4" width="183px" height="323px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="http://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df2208a8788%26domain%3Dimperium.gitsystem.it%26origin%3Dhttp%253A%252F%252Fimperium.gitsystem.it%252Ff7f8e0f8%26relation%3Dparent.parent&amp;color_scheme=light&amp;force_wall=false&amp;header=true&amp;height=323&amp;href=https%3A%2F%2Fwww.facebook.com%2Fimperiumszczecin%3Ffref%3Dts&amp;locale=pl_PL&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=183" style="border: none; visibility: visible; width: 183px; height: 323px;" class=""></iframe></span></fb:like-box>
+</div>
+
+
+  </div>
+
+    </div><script async="" src="//connect.soundcloud.com/soundmanager2/soundmanager2.js"></script><div id="sm2-container" class="movieContainer " style="z-index: 10000; position: absolute; width: 6px; height: 6px; top: -9999px; left: -9999px;"><embed name="sm2movie" id="sm2movie" src="//connect.soundcloud.com/soundmanager2/soundmanager2_flash9.swf" width="auto" height="auto" quality="high" allowscriptaccess="always" bgcolor="#ffffff" pluginspage="www.macromedia.com/go/getflashplayer" title="JS/Flash audio component (SoundManager 2)" type="application/x-shockwave-flash" haspriority="true"></div></body>
+
