@@ -103,6 +103,7 @@ p {margin:0.4em 0; text-align: left;}
 body { background:#222; font-family:"Abel",verdana; font-size:16px; color:white;line-height: 1.5em;color:#999;}
 section{ max-width:854px; min-height:300px; margin:10px auto;position:relative;padding: 0 10px; }
 header {position:relative; height:160px;}
+header img { max-width: 25%;   }
 img{ max-width: 100%; height: auto; } 
 header img {margin:15px 0 0 0;}
 header a,article div p a{color:white;  text-decoration:none;}
