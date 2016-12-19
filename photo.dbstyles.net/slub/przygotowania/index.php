@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="content-Type" content="text/html; charset=utf-8"/> 
-	<title>Ślub Katarzyny i Marcina</title> 
+	<title>Katarzyna and Marcin wedding</title> 
 	<meta name="description" content="Zdjęcia ślubne Katarzyny i Marcina 21.09.2012" /> 
 	<meta name="keywords" content="sesja,ślubna" /> 
 	<link rel="shortcut icon" href="../images/favicon.png" /> 
@@ -53,7 +53,7 @@
     <div id="wrapperBig">
         <div id="wrapperSmall">        
             <div id="mainNav">
-                    <a href="http://photo.dbstyles.net"><img id="logo" src="../images/logo.png" alt="" /></a>
+                    <a href="http://photo.dbstyles.net"><img id="logo" src="../images/logoP.png" alt="" /></a>
                     <img id="logoDesc" src="../images/film.png" alt="" />
                     <p class="menuTx">Delektuj się pozostaniem. <br/> Stay tuned for updates. </p>
                     <!--<div id="navIndeed" class="lower">

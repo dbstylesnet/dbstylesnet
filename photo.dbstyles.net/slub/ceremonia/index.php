@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="content-Type" content="text/html; charset=utf-8"/> 
-	<title>Ślub Katarzyny i Marcina</title> 
+	<title>Katarzyna and Marcin wedding</title> 
 	<meta name="description" content="Zdjęcia ślubne Katarzyny i Marcina 21.09.2012" /> 
 	<meta name="keywords" content="sesja,ślubna" /> 
 	<link rel="shortcut icon" href="../images/favicon.png" /> 

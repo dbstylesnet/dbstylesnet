@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/global.css" />	
 	<link rel="stylesheet" href="css/style.css" />
     <link rel="image_src" href="/fbImg.jpg"/>
-    <meta property="og:image" content="http://photo.dbstyle.uk/fbImg.jpg"/>
+    <meta property="og:image" content="http://photo.dbstyles.net/fbImg.jpg"/>
 <!--         <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css' />   -->
         <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>         
         <script language="javascript" type="text/javascript" src="swfobject.js" ></script>    
@@ -40,13 +40,13 @@
     <div id="wrapperBig">
         <div id="wrapperSmall">        
             <div id="mainNav">
-                    <a href="http://photo.dbstyle.uk/"><img id="logo" src="images/logoP.png" alt="" /></a>
+                    <a href="http://photo.dbstyles.net/"><img id="logo" src="images/logoP.png" alt="" /></a>
                     <img id="logoDesc" src="images/film.png" alt="" />
                     <p class="menuTx">since 2009 </p>
                   <div id="navIndeed">
-                            <a href="http://photo.dbstyle.uk" title="Home" class="home">Home<span></span></a>                       
+                            <a href="http://photo.dbstyles.net" title="Home" class="home">Home<span></span></a>                       
                             <a href="/kasiamarcin" title="Example wedding photos" class="wedd">Wedding<span></span></a>
-                            <a href="mailto:&#100;&#98;&#64;&#100;&#98;&#115;&#116;&#121;&#108;&#101;&#46;&#117;&#107;" title="Don't hasitate" class="last">Contact<span></span></a>	  
+                            <a href="mailto:&#100;&#98;&#64;&#100;&#98;&#115;&#116;&#121;&#108;&#101;&#115;&#46;&#110;&#101;&#116;" title="Don't hasitate" class="last">Contact<span></span></a>	  
                     </div>
 <!--                     <div id="navBottom">
                             <a href="index.html">Przygotowania</a>
