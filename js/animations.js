@@ -21,6 +21,34 @@
     }
 }());
 
+
+function detectmob() { 
+ if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+      alert('pierwszy iphone');
+  }
+ else {
+    return false;
+  }
+}
+detectmob();
+
+function DetectIphone()
+{
+   if (uagent.search("iphone") > -1)
+      alert('drugi iphone');
+   else
+      alert('false');
+}
+
+DetectIphone();
+
 // mobile check
 function isMobile(){
     if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){      
