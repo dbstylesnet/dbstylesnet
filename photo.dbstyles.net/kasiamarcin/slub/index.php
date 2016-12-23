@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
 	<title>photo.dbstyles.net wedding</title> 
 	<meta name="description" content="Wedding photos Kate and Marcin 21.09.2012" /> 
-	<meta name="keywords" content="sesja,ślubna" /> 
+	<meta name="keywords" content="wedding photoshoot" /> 
 	<link rel="shortcut icon" href="../../images/favicon.png" /> 
 	<link rel="shortcut icon" href="../../images/favicon.ico" />         
 	<link rel="stylesheet" href="../../css/reset.css" />
