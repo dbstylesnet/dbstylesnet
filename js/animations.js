@@ -31,23 +31,16 @@ function detectmob() {
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)
  ){
-      alert('pierwszy iphone');
+      alert('to mobile');
   }
  else {
-    return false;
+      alert('nie mobile');
   }
 }
+
 detectmob();
 
-function DetectIphone()
-{
-   if (uagent.search("iphone") > -1)
-      alert('drugi iphone');
-   else
-      alert('false');
-}
 
-DetectIphone();
 
 // mobile check
 function isMobile(){
