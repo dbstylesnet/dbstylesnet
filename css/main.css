@@ -1,6 +1,6 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /* ==========================================================================
-   dbstyles.net CSS
+   dbstyles.net Dariusz Buczynski
    ========================================================================== */
 
 a,
@@ -227,13 +227,10 @@ hr {
     height: 100vh;
     overflow: hidden;
 }
-.panel {
+.not-mobile .panel {
     height: 100%;
     width: 100%;
     position: absolute;
-}
-.not-mobile .panel,
-.is-mobile .panel.portrait {
     background: url(../images/picBgWorkBW.jpg) center center #222 no-repeat;
     box-shadow: inset 0px 0px 70px 0px #111;
 }
@@ -319,7 +316,7 @@ hr {
 }
 @media only screen and (max-width: 650px),
 screen and (max-height: 510px) {
-    #services {
+    .is-mobile #services {
         position: absolute;
         width: 90%;
         max-width: 100%;
@@ -328,7 +325,7 @@ screen and (max-height: 510px) {
         top: 20%;
         z-index: 10;
     }
-    #services ul.list {
+    .is-mobile #services ul.list {
         display: inline-block;
         list-style: none;
         margin: 0;
@@ -340,11 +337,11 @@ screen and (max-height: 510px) {
         line-height: 45px;
         width: 100%;
     }
-    #services h2 {
+    .is-mobile #services h2 {
         display: none;
     }
-    ul.contents li,
-    h2.contents {
+    .is-mobile ul.contents li,
+    .is-mobile h2.contents {
         opacity: 1;
         float: left;
         width: 100%;
@@ -359,13 +356,13 @@ screen and (max-height: 510px) {
     }
 }
 @media only screen and (max-height: 510px) {
-    .contactNfo {
+    .is-mobile .contactNfo {
         margin: 2%;
     }
-    a.logo img {
+    .is-mobile a.logo img {
         margin: 2%;
     }
-    #services {
+    .is-mobile #services {
         position: absolute;
         width: 100%;
         max-width: 100%;
@@ -375,7 +372,7 @@ screen and (max-height: 510px) {
         z-index: 10;
         height: 230px;
     }
-    #services ul.list {
+    .is-mobile #services ul.list {
         display: inline-block;
         list-style: none;
         margin: 0;
@@ -387,7 +384,7 @@ screen and (max-height: 510px) {
         line-height: 25px;
         width: 100%;
     }
-    ul.contents li {
+    .is-mobile ul.contents li {
         opacity: 1;
         float: left;
         width: 100%;
@@ -401,7 +398,7 @@ screen and (max-height: 510px) {
 }
 @media only screen and (max-width: 450px),
 screen and (max-height: 550px) {
-    a.logo img {
+    .is-mobile a.logo img {
         max-width: 150px;
     }
 }
