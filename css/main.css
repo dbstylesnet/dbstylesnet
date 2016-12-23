@@ -221,7 +221,7 @@ hr {
 #picBgBW {
     display: none;
 }
-.parallaxParent .bgBW {} .pinSection {} #pinContainer {
+#pinContainer {
     width: 100%;
     height: 100%;
     height: 100vh;
@@ -270,6 +270,9 @@ hr {
     height: 100%;
     position: relative;
     top: 0;
+} 
+.is-mobile #pinContainer {
+    height: auto;
 }
 .is-mobile .pinSection {
     margin-top: 100px;

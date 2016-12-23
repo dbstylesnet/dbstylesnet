@@ -24,7 +24,7 @@
 
 // mobile check
 function isMobile(){
-    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){      
+    if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){      
 
         //add class
         var d = document.getElementById("site");
