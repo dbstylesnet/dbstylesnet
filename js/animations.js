@@ -55,7 +55,7 @@ function isMobile(){
         startT
         .to('.parallaxParent', 1.5, {opacity:1,ease:Linear.easeInOut})
         .to('a.logo img', 2.5, {opacity:0.2,ease:Linear.easeInOut})           
-        .to('.parallaxParent', 1, {opacity:.3,ease:Linear.easeInOut})
+        .to('.parallaxParent', 1, {opacity:.5,ease:Linear.easeInOut})
         .to('a.logo img', .8, { marginTop: '100px', marginLeft: '10%', top:0, left:0,opacity:1, rotation:0,scale:1,ease:Back.easeOut })    
         .to('.contactNfo', .8, {opacity:1,ease:Linear.easeInOut},5)    
         .fromTo('h2.contents', 1, {left: '30px',opacity:0}, {left:'0',opacity:1,ease:Power2.easeOut} )
@@ -89,6 +89,25 @@ function isMobile(){
                 .addTo(controller);
         });
 
+        //desktop mobile check
+        CSSPlugin.defaultTransformPerspective = 500;    
+
+        TweenMax.to('.mobileInfo', 0, {rotationX:-55, transformOrigin:"center top -350"},0);
+        $( window ).resize(function() {
+            var size = $( window ).width();
+            if(size<750){
+                TweenMax.to('.mobileInfo', 1, {opacity:1,rotationX:0,zIndex:20,visibility:'visible',ease:Back.easeOut.config(2)});
+                TweenMax.to('.dim', 1, {opacity:.6,zIndex:17,visibility:'visible'});   
+                TweenMax.to('#services', 1, {opacity:0});                              
+            }else{
+                TweenMax.to('.mobileInfo', 1, {opacity:0,rotationX:-55,zIndex:0,ease:Back.easeOut.config(2)});
+                TweenMax.to('.dim', 1, {opacity:0,zIndex:-1,visibility:'visible'});        
+                TweenMax.to('#services', 1, {opacity:1});                             
+            }
+            
+        });
+
+
     }else{
 
         //add class            
@@ -119,6 +138,5 @@ function isMobile(){
 }
 
 isMobile();
-
 
 
