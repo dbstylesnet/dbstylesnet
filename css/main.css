@@ -109,9 +109,6 @@ img {
     top: 40%;
     left: -120px;
 }
-header img {
-    /*margin:15px 0 0 0;*/
-}
 header a,
 article div p a {
     color: white;
@@ -135,6 +132,7 @@ article div p a:hover {
     opacity: 0;
     margin: 130px 10% 0 0;
     right: 0;
+    top: 0;
 }
 .footer a.about {
     font-size: 12px;
