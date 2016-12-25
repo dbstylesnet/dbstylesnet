@@ -35,7 +35,7 @@ function isMobile(){
             var a = $(window);
             a.on("mousewheel DOMMouseScroll", function(b) {
                 b.preventDefault();
-                b = b.originalEvent.wheelDelta / 80 || -b.originalEvent.detail / 3;
+                b = b.originalEvent.wheelDelta / 100 || -b.originalEvent.detail / 3;
                 b = a.scrollTop() - parseInt(280 * b);
                 TweenMax.to(a, 1.1, {
                     scrollTo: {
