@@ -24,11 +24,11 @@
 
 // mobile check
 function isMobile(){
-    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){      
+    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 
         //add class
         var d = document.getElementById("site");
-        d.className = d.className + " not-mobile";             
+        d.className = d.className + " not-mobile";
 
         //smooth scroll
         function smoothScroll() {
@@ -54,15 +54,15 @@ function isMobile(){
 
         startT
         .to('.parallaxParent', 1.5, {opacity:1,ease:Linear.easeInOut})
-        .to('a.logo img', 2.5, {opacity:0.2,ease:Linear.easeInOut})           
-        .to('.parallaxParent', 1, {opacity:.5,ease:Linear.easeInOut})
-        .to('a.logo img', .8, { marginTop: '100px', marginLeft: '10%', top:0, left:0,opacity:1, rotation:0,scale:1,ease:Back.easeOut })    
-        .to('.contactNfo', .8, {opacity:1,ease:Linear.easeInOut},5)    
+        .to('a.logo img', 2.5, {opacity:0.2,ease:Linear.easeInOut})
+        .to('.parallaxParent', 1, {opacity:.3 ,ease:Linear.easeInOut})
+        .to('a.logo img', .8, { marginTop: '100px', marginLeft: '10%', top:0, left:0,opacity:1, rotation:0,scale:1,ease:Back.easeOut })
+        .to('.contactNfo', .8, {opacity:1,ease:Linear.easeInOut},5)
         .fromTo('h2.contents', 1, {left: '30px',opacity:0}, {left:'0',opacity:1,ease:Power2.easeOut} )
         .staggerFromTo('ul.contents li', .6, {opacity:0,x:-300},{opacity:1,x:0,ease:Power2.easeOut},0.05)
-        .to('#services', 1.2, {left:'50%',ease:Power2.easeOut},6.4)       
-        .to('#services', .7, {top:'50%',ease:Power1.easeInOut},6.9)    
-        .to('a.logo img', .8, { marginLeft: '5%',marginTop: '50px',left:'-100px',scale:.5,ease:Back.easeOut },6.9) 
+        .to('#services', 1.2, {left:'50%',ease:Power2.easeOut},6.4)
+        .to('#services', .7, {top:'50%',ease:Power1.easeInOut},6.9)
+        .to('a.logo img', .8, { marginLeft: '5%',marginTop: '50px',left:'-100px',scale:.5,ease:Back.easeOut },6.9)
         .to('.contactNfo', .8, { marginRight: '5%',marginTop: '85px',ease:Back.easeOut},6.9);
 
         // top scroll
@@ -73,7 +73,7 @@ function isMobile(){
                         .addTo(controller);
 
         //bottom scroll
-        $(function () { 
+        $(function () {
             var controller = new ScrollMagic.Controller();
 
             var wipeAnimation = new TimelineMax()
@@ -90,53 +90,51 @@ function isMobile(){
         });
 
         //desktop mobile check
-        CSSPlugin.defaultTransformPerspective = 500;    
+        CSSPlugin.defaultTransformPerspective = 500;
 
         TweenMax.to('.mobileInfo', 0, {rotationX:-55, transformOrigin:"center top -350"},0);
         $( window ).resize(function() {
             var size = $( window ).width();
             if(size<750){
                 TweenMax.to('.mobileInfo', 1, {opacity:1,rotationX:0,zIndex:20,visibility:'visible',ease:Back.easeOut.config(2)});
-                TweenMax.to('.dim', 1, {opacity:.6,zIndex:17,visibility:'visible'});   
-                TweenMax.to('#services', 1, {opacity:0});                              
+                TweenMax.to('.dim', 1, {opacity:.6,zIndex:17,visibility:'visible'});
+                TweenMax.to('#services', 1, {opacity:0});
             }else{
                 TweenMax.to('.mobileInfo', 1, {opacity:0,rotationX:-55,zIndex:0,ease:Back.easeOut.config(2)});
-                TweenMax.to('.dim', 1, {opacity:0,zIndex:-1,visibility:'visible'});        
-                TweenMax.to('#services', 1, {opacity:1});                             
+                TweenMax.to('.dim', 1, {opacity:0,zIndex:-1,visibility:'visible'});
+                TweenMax.to('#services', 1, {opacity:1});
             }
-            
+
         });
 
 
     }else{
 
-        //add class            
+        //add class
         var d = document.getElementById("site");
-        d.className = d.className + " is-mobile";  
+        d.className = d.className + " is-mobile";
 
 
         //orientation watcher
         var mql = window.matchMedia("(orientation: portrait)");
 
-        if(mql.matches) {  
-            $('.infobox').addClass('portrait');            
-        } else {  
+        if(mql.matches) {
+            $('.infobox').addClass('portrait');
+        } else {
             $('.infobox').removeClass('portrait');
         }
 
         // Add a media query change listener
         mql.addListener(function(m) {
             if(m.matches) {
-                $('.infobox').addClass('portrait');  
+                $('.infobox').addClass('portrait');
             }
             else {
                 $('.infobox').removeClass('portrait');
             }
         });
     }
-    
+
 }
 
 isMobile();
-
-

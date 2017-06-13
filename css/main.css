@@ -533,7 +533,7 @@ textarea {
     border: 0;
     overflow: hidden;
     /* IE 6/7 fallback */
-    
+
     *text-indent: -9999px;
 }
 .ir:before {
@@ -601,7 +601,7 @@ textarea {
 .clearfix:after {
     content: " ";
     /* 1 */
-    
+
     display: table;
     /* 2 */
 }
@@ -641,7 +641,7 @@ textarea {
         background: transparent !important;
         color: #000 !important;
         /* Black prints faster: h5bp.com/s */
-        
+
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -658,7 +658,7 @@ textarea {
     /*
      * Don't show links for images, or javascript/internal links
      */
-    
+
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
