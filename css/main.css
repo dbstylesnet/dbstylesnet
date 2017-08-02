@@ -24,7 +24,6 @@ h3 a:focus {
     outline: none;
 }
 h3 {
-    color: #ddd;
     font-size: 60px;
 }
 p {
@@ -32,10 +31,10 @@ p {
     text-align: left;
     font-size: 25px;
     line-height: 1.2;
-    color: #ddd;
+    color: #fff;
 }
 body {
-    background: #393939;
+    background: #393939 url('../images/blackMain.jpg') repeat;
     font-family: "Abel", verdana;
     font-size: 16px;
     color: white;
@@ -118,6 +117,9 @@ header a:hover,
 article div p a:hover {
     color: #888;
 }
+div.box{
+  opacity: 0;
+}
 .main.about a.about,
 .main.projects a.projects {
     color: #888;
@@ -144,15 +146,14 @@ article div p a:hover {
 }
 article h3 {
     margin: 0px;
-    color: #ddd;
     display: block;
     font-size: 35px;
     line-height: 1em;
-    color: #999;
+    color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 article h3 a {
-    color: #ddd;
+    color: #fff;
     text-decoration: none;
     font-size: 35px;
 }
@@ -224,6 +225,7 @@ hr {
     height: 100%;
     height: 100vh;
     overflow: hidden;
+    z-index: 50;
 }
 .not-mobile .panel {
     height: 100%;

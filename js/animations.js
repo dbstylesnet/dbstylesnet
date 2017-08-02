@@ -55,14 +55,14 @@ function isMobile(){
         startT
         .to('.parallaxParent', 1.5, {opacity:1,ease:Linear.easeInOut})
         .to('a.logo img', 2.5, {opacity:0.2,ease:Linear.easeInOut})
-        .to('.parallaxParent', 1, {opacity:.3 ,ease:Linear.easeInOut})
+        //.to('.parallaxParent', 1, {opacity:.3 ,ease:Linear.easeInOut})
         .to('a.logo img', .8, { marginTop: '100px', marginLeft: '10%', top:0, left:0,opacity:1, rotation:0,scale:1,ease:Back.easeOut })
         .to('.contactNfo', .8, {opacity:1,ease:Linear.easeInOut},5)
         .fromTo('h2.contents', 1, {left: '30px',opacity:0}, {left:'0',opacity:1,ease:Power2.easeOut} )
         .staggerFromTo('ul.contents li', .6, {opacity:0,x:-300},{opacity:1,x:0,ease:Power2.easeOut},0.05)
         .to('#services', 1.2, {left:'50%',ease:Power2.easeOut},6.4)
         .to('#services', .7, {top:'50%',ease:Power1.easeInOut},6.9)
-        .to('a.logo img', .8, { marginLeft: '5%',marginTop: '50px',left:'-100px',scale:.5,ease:Back.easeOut },6.9)
+        .to('a.logo img', .8, { marginLeft: '5%',marginTop: '50px',left:'-75px',scale:.8,ease:Back.easeOut },6.9)
         .to('.contactNfo', .8, { marginRight: '5%',marginTop: '85px',ease:Back.easeOut},6.9);
 
         // top scroll
@@ -71,6 +71,44 @@ function isMobile(){
         new ScrollMagic.Scene({triggerElement: "#picBg"})
                         .setTween("#picBg > div", {y: "80%", ease: Linear.easeNone})
                         .addTo(controller);
+
+
+        CSSPlugin.defaultTransformPerspective = 500;
+
+        for(i=1;i<=6;i++){
+          TweenMax.to('section article div img', 0, {opacity:0,rotationX:-55, transformOrigin:"center top -350"},0);
+          var controller = new ScrollMagic.Controller;
+          var scene = new ScrollMagic.Scene({
+      							triggerElement: "section article div.trig"+i
+      						})
+                  .setTween("section article div.trig"+i+" img", 1, {opacity:1,rotationX:0,zIndex:20,visibility:'visible',ease:Back.easeOut.config(2)})
+                  .addTo(controller)
+                  .offset(-140);
+
+          var scene = new ScrollMagic.Scene({
+      							triggerElement: "section article div.trig"+i
+      						})
+                  .setTween("section article div.trig1 h3,section article div.trig"+i, .5, {opacity:1})
+                  .addTo(controller)
+                  .offset(-320);
+        }
+
+        TweenMax.to('section article div img', 0, {opacity:0,rotationX:-55, transformOrigin:"center top -350"},0);
+        var controller = new ScrollMagic.Controller;
+        var scene = new ScrollMagic.Scene({
+    							triggerElement: "section article div.trig1"
+    						})
+                .setTween("section article div.trig1 img", 1, {opacity:1,rotationX:0,zIndex:20,visibility:'visible',ease:Back.easeOut.config(2)})
+                .addTo(controller)
+                .offset(-140);
+
+        var scene = new ScrollMagic.Scene({
+    							triggerElement: "section article div.trig1"
+    						})
+                .setTween("section article div.trig1 h3,section article div.trig1", .5, {opacity:1})
+                .addTo(controller)
+                .offset(-320);
+
 
         //bottom scroll
         $(function () {
@@ -90,8 +128,6 @@ function isMobile(){
         });
 
         //desktop mobile check
-        CSSPlugin.defaultTransformPerspective = 500;
-
         TweenMax.to('.mobileInfo', 0, {rotationX:-55, transformOrigin:"center top -350"},0);
         $( window ).resize(function() {
             var size = $( window ).width();
@@ -122,6 +158,9 @@ function isMobile(){
             $('.infobox').addClass('portrait');
         } else {
             $('.infobox').removeClass('portrait');
+            // var scene = new scrollMagic.Scene({triggerElement:'#trigger1'})
+        //                 .setVelocity('section article div img',{opacity:0},{duration:400})
+        //                 .addTo(controller);
         }
 
         // Add a media query change listener
@@ -138,3 +177,11 @@ function isMobile(){
 }
 
 isMobile();
+
+// various functions
+function various(){
+  // controller.scrollTo(100);
+
+}
+
+various();
