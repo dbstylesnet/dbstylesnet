@@ -88,26 +88,10 @@ function isMobile(){
           var scene = new ScrollMagic.Scene({
       							triggerElement: "section article div.trig"+i
       						})
-                  .setTween("section article div.trig1 h3,section article div.trig"+i, .5, {opacity:1})
+                  .setTween("section article div.trig"+i+" h3,section article div.trig"+i, .5, {opacity:1})
                   .addTo(controller)
                   .offset(-320);
         }
-
-        TweenMax.to('section article div img', 0, {opacity:0,rotationX:-55, transformOrigin:"center top -350"},0);
-        var controller = new ScrollMagic.Controller;
-        var scene = new ScrollMagic.Scene({
-    							triggerElement: "section article div.trig1"
-    						})
-                .setTween("section article div.trig1 img", 1, {opacity:1,rotationX:0,zIndex:20,visibility:'visible',ease:Back.easeOut.config(2)})
-                .addTo(controller)
-                .offset(-140);
-
-        var scene = new ScrollMagic.Scene({
-    							triggerElement: "section article div.trig1"
-    						})
-                .setTween("section article div.trig1 h3,section article div.trig1", .5, {opacity:1})
-                .addTo(controller)
-                .offset(-320);
 
 
         //bottom scroll
