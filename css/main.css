@@ -34,11 +34,7 @@ p {
     color: #fff;
 }
 body {
-<<<<<<< HEAD
-    background: #393939 url('../images/grey2.jpg') repeat;
-=======
     background: #393939 url('../images/blueMain2.jpg') repeat;
->>>>>>> 6db6577691dfa7e1a30e82894daa72102ace186c
     font-family: "Abel", verdana;
     font-size: 16px;
     color: white;
@@ -272,7 +268,7 @@ hr {
    ========================================================================== */
 
 body.is-mobile {
-    background: #393939 url('../images/mainBlack.jpg') repeat;
+    background: #393939 url('../images/blackMain.jpg') repeat;
 }
 .is-mobile div.box{
     opacity: 1;
