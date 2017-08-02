@@ -32,6 +32,7 @@ p {
     font-size: 22px;
     line-height: 1.2;
     color: #fff;
+    text-shadow: 1px 0px 0px #000;
 }
 body {
     background: #393939 url('../images/blueMain2.jpg') repeat;
@@ -70,6 +71,7 @@ header img {
     text-align: right;
     line-height: 30px;
     width: 140px;
+    text-shadow: 1px 0px 0px #000;
 }
 ul.contents li,
 h2.contents {
@@ -96,6 +98,7 @@ h2.contents {
     margin-top: 11px;
     opacity: 0;
     padding: 0 0 0 15px;
+    text-shadow: 1px 0px 1px #000;
 }
 img {
     max-width: 100%;
