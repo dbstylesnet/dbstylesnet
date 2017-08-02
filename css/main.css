@@ -34,7 +34,7 @@ p {
     color: #fff;
 }
 body {
-    background: #393939 url('../images/blackMain.jpg') repeat;
+    background: #393939 url('../images/grey2.jpg') repeat;
     font-family: "Abel", verdana;
     font-size: 16px;
     color: white;
@@ -267,6 +267,12 @@ hr {
    Mobile
    ========================================================================== */
 
+body.is-mobile {
+    background: #393939 url('../images/mainBlack.jpg') repeat;
+}
+.is-mobile div.box{
+    opacity: 1;
+}
 .is-mobile a.logo img {
     margin: 7% 0 0 7%;
     position: absolute;
@@ -288,7 +294,7 @@ hr {
     display: block;
 }
 .is-mobile .bgBW {
-    background-position: 13% -100px;
+    background-position: 25% -150px;
     background-image: url(../images/picBgBW.jpg);
     box-shadow: inset 0px 0px 70px 0px #111
 }
