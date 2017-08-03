@@ -308,7 +308,7 @@ body.is-mobile {
 }
 .is-mobile .bgBW {
     background-position: 25% -150px;
-    background-image: url(../images/picBgBW.jpg);
+    background-image: url(../images/picBgC.jpg);
     box-shadow: inset 0px 0px 70px 0px #111
 }
 .is-mobile .parallaxParent {
