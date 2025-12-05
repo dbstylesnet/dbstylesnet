@@ -1,4 +1,0 @@
-<div id="foot">
-    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.dbfoto.pl%2F&amp;send=false&amp;layout=button_count&amp;width=150&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px; float:left; margin:9px 0 0 100px;"></iframe>
-    <p id="copyright">Copyrights 2016 | All Rights Reserved | Nie możesz kopiować zdjęć oraz innej zawartości tej strony <br/> Powered by <a href="http://www.flash-gallery.org">Flash Gallery</a> &nbsp;&nbsp;&nbsp; Kontakt: <a title="email me" href="mailto:&#100;&#98;&#64;&#100;&#98;&#115;&#116;&#121;&#108;&#101;&#115;&#46;&#110;&#101;&#116;">&#100;&#98;&#64;&#100;&#98;&#115;&#116;&#121;&#108;&#101;&#115;&#46;&#110;&#101;&#116;</a> / <a title="call me" href="callto:+610412158780">0412 158 780</a></p>
-</div>
